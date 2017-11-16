@@ -1,0 +1,24 @@
+{application, aliyun_mns,
+  [{description, "An OTP application"},
+    {vsn, "0.1.0"},
+    {registered, []},
+    {mod, {aliyun_mns, []}},
+    {applications,
+      [kernel,
+        stdlib
+        ,lager
+      ]},
+    {env, [
+      {accessId,"testId"}
+      ,{accessKey,"testSecret"}
+      ,{accountId,"testId"}
+      ,{topic,"testTopic"}
+
+    ]},
+    {modules, []},
+
+    {maintainers, []},
+    {licenses, []},
+    {links, []}
+  ]
+}.
